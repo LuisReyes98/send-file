@@ -3,7 +3,7 @@ priority: 1
 input_parameters: ["request"]
 
 local dir = torchbear.settings.files_path or "files"
-local path = dir .. "/" .. request.query.file
+local path = dir .. request.path -- Paths always start with '/'
 local file_content = fs.read_file(path)
 
 if not file_content then
