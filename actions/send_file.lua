@@ -18,8 +18,7 @@ end
 return {
   status = 200,
   headers = {
-    -- TODO: Get content type from file
-    ["content-type"] = "application/octet-stream",
+    ["content-type"] = mime.guess_mime_type(path),
   },
   body = file_content
 }
