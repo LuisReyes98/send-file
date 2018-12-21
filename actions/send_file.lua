@@ -1,6 +1,6 @@
-event: ["file_requested"]
-priority: 1
-input_parameters: ["request"]
+event = ["file_requested"]
+priority = 1
+input_parameters = ["request"]
 
 local dir = torchbear.settings.files_path or "files"
 local path = dir .. request.path -- Paths always start with '/'
