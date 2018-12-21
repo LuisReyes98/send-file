@@ -2,13 +2,13 @@ description = "Slide"
 fields = {
   title = {
     type = "string"
-  }
+  },
   body = {
     type = "string"
-  }
+  },
   image-address = {
     type = "string"
-  }
+  },
   slideshow = {
     type = "uuid"
   }
