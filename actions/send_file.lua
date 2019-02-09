@@ -2,7 +2,7 @@ event = ["file_requested"]
 priority = 1
 input_parameters = ["request"]
 
-local dir = torchbear.settings.files_path or "files"
+local dir = settings.files_path or "files"
 local path = dir .. request.path -- Paths always start with '/'
 local file_content = fs.read_file(path)
 
